@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "X5gltv2qjM5bQaMVdBpi1P77w+zFp45rBYtaRmT0CB+OGjiRDPeLzJ8PcBL5SwGtRpddNL6cVVi136IZ8YCMng==",
+  "dgSpecHash": "hkUsOEdABQNgQE0b3pmvXQmdwE0jN0vklcj+FYZWrZysuLjlaKiUTd65AXfq6VdcJQsnegSgFsOTD59HdI2ZLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\avs20\\OneDrive - University of St Andrews\\Documents\\Bonsai and Godot from borrowed PC\\mousevr-main\\Game\\MouseVR.csproj",
+  "projectFilePath": "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avs20\\.nuget\\packages\\asyncio\\0.1.69\\asyncio.0.1.69.nupkg.sha512",
-    "C:\\Users\\avs20\\.nuget\\packages\\godot.sourcegenerators\\4.2.0\\godot.sourcegenerators.4.2.0.nupkg.sha512",
-    "C:\\Users\\avs20\\.nuget\\packages\\godotsharp\\4.2.0\\godotsharp.4.2.0.nupkg.sha512",
-    "C:\\Users\\avs20\\.nuget\\packages\\godotsharpeditor\\4.2.0\\godotsharpeditor.4.2.0.nupkg.sha512",
+    "C:\\Users\\avs20\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "C:\\Users\\avs20\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
+    "C:\\Users\\avs20\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512",
     "C:\\Users\\avs20\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\avs20\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.10\\microsoft.extensions.objectpool.5.0.10.nupkg.sha512",
     "C:\\Users\\avs20\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

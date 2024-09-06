@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avs20\\OneDrive - University of St Andrews\\Documents\\Bonsai and Godot from borrowed PC\\mousevr-main\\Game\\MouseVR.csproj": {}
+    "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avs20\\OneDrive - University of St Andrews\\Documents\\Bonsai and Godot from borrowed PC\\mousevr-main\\Game\\MouseVR.csproj": {
+    "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avs20\\OneDrive - University of St Andrews\\Documents\\Bonsai and Godot from borrowed PC\\mousevr-main\\Game\\MouseVR.csproj",
+        "projectUniqueName": "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj",
         "projectName": "MouseVR",
-        "projectPath": "C:\\Users\\avs20\\OneDrive - University of St Andrews\\Documents\\Bonsai and Godot from borrowed PC\\mousevr-main\\Game\\MouseVR.csproj",
+        "projectPath": "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj",
         "packagesPath": "C:\\Users\\avs20\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avs20\\OneDrive - University of St Andrews\\Documents\\Bonsai and Godot from borrowed PC\\mousevr-main\\Game\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\avs20\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -40,15 +40,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.2.1, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.2.1, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.2.1, )"
             },
             "NetMQ": {
               "target": "Package",
