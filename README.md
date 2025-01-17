@@ -13,3 +13,6 @@ The Bonsai_workflows folder holds a couple of existing bonsai workflows.
 - - what happens in the video is saved in an Output folder in a excel file. this logs different parameters of movement from Godot, when the mouse is in proximity with one type of the 3 types of stim cubes (logs '1' for being in proximity of the cube until a certain amount of time after leaving the cube). It also logs when it starts and saves certain videos for individual stimuli and save them as e.g. Circle/Circle_6_16_3_39.avi, and logs this until a new video is being logged e.g. Diagonal/Diagonal_6_16_3_43.avi
 - -  TODO fix the time stamping, currently logs day, hour, minute, second.
 - - TODO investiate how long time delay there is form cube proximity entry to stimulus is elcited and video recording starts. Currently seems to be quite a delay.
+- - TODO fix Godot projection so it projects nicely across curved screen
+  - TODO consider implementing a block design, shifting between which stim is connected to which box WITHIN one experiment
+  - Set up the shifting between which stim is connected to which box
