@@ -15,7 +15,7 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="port:CreateSerialPort">
           <port:Name>VRPORT</port:Name>
-          <port:PortName>COM3</port:PortName>
+          <port:PortName>COM4</port:PortName>
           <port:BaudRate>9600</port:BaudRate>
           <port:NewLine>\r\n</port:NewLine>
           <port:Parity>None</port:Parity>

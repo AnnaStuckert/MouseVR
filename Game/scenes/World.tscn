@@ -59,8 +59,12 @@ transform = Transform3D(-1, 0, -8.97035e-08, 0, 1, 0, 9.23515e-08, 0, -1, 0, 0, 
 shape = SubResource("CapsuleShape3D_quner")
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, 0, -1.12783e-09, 0, 1, 0, -3.09295e-09, 0, 1, 2.98023e-08, 0, 0.0079999)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.98023e-08, 0, 0.0079999)
+current = true
 fov = 80.0
+
+[node name="SubViewport" type="SubViewport" parent="Player/Camera3D"]
+size = Vector2i(1280, 720)
 
 [node name="Ground" type="StaticBody3D" parent="."]
 

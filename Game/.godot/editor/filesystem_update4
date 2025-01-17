@@ -1,5 +1,5 @@
 res://scenes/World.tscn
 res://scenes/Environment.tres
-res://scenes/BonsaiNode2.cs
-res://scenes/MasterCircle.cs
-res://scripts/Bonsai.cs
+res://scenes/Camera3D_projection_flip.gd
+res://curvature.gdshader
+res://scenes/Camera3D_curvature.gd
