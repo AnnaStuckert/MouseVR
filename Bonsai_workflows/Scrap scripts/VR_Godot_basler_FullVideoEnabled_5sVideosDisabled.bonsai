@@ -158,23 +158,27 @@
         <io:Suffix>Timestamp</io:Suffix>
         <io:IncludeHeader>false</io:IncludeHeader>
       </Expression>
-      <Expression xsi:type="SubscribeSubject">
-        <Name>VideoFeed</Name>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="SubscribeSubject">
+          <Name>VideoFeed</Name>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="cv:VideoWriter">
-          <cv:FileName>CompleteVideos/Complete.avi</cv:FileName>
-          <cv:Suffix>Timestamp</cv:Suffix>
-          <cv:Buffered>true</cv:Buffered>
-          <cv:Overwrite>false</cv:Overwrite>
-          <cv:FourCC>FMP4</cv:FourCC>
-          <cv:FrameRate>45</cv:FrameRate>
-          <cv:FrameSize>
-            <cv:Width>0</cv:Width>
-            <cv:Height>0</cv:Height>
-          </cv:FrameSize>
-          <cv:ResizeInterpolation>NearestNeighbor</cv:ResizeInterpolation>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="cv:VideoWriter">
+            <cv:FileName>CompleteVideos/Complete.avi</cv:FileName>
+            <cv:Suffix>Timestamp</cv:Suffix>
+            <cv:Buffered>true</cv:Buffered>
+            <cv:Overwrite>false</cv:Overwrite>
+            <cv:FourCC>FMP4</cv:FourCC>
+            <cv:FrameRate>45</cv:FrameRate>
+            <cv:FrameSize>
+              <cv:Width>0</cv:Width>
+              <cv:Height>0</cv:Height>
+            </cv:FrameSize>
+            <cv:ResizeInterpolation>NearestNeighbor</cv:ResizeInterpolation>
+          </Combinator>
+        </Builder>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
@@ -273,7 +277,7 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="pylon:PylonCapture">
           <pylon:SerialNumber>40457504</pylon:SerialNumber>
-          <pylon:ParameterFile>a2A1920-160umPRO_40457504_30fps.pfs</pylon:ParameterFile>
+          <pylon:ParameterFile>C:\Users\avs20\Downloads\a2A1920-160umPRO_40457504.pfs</pylon:ParameterFile>
           <pylon:GrabStrategy>OneByOne</pylon:GrabStrategy>
         </Combinator>
       </Expression>
@@ -311,7 +315,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="rx:Throttle">
-          <rx:DueTime>PT6S</rx:DueTime>
+          <rx:DueTime>PT2S</rx:DueTime>
         </Combinator>
       </Expression>
       <Expression xsi:type="rx:SelectMany">
@@ -364,20 +368,22 @@
                 <Property Name="FileName" />
               </PropertyMappings>
             </Expression>
-            <Expression xsi:type="Combinator">
-              <Combinator xsi:type="cv:VideoWriter">
-                <cv:FileName>Diagonal/Diagonal_7_14_11_31.avi</cv:FileName>
-                <cv:Suffix>None</cv:Suffix>
-                <cv:Buffered>true</cv:Buffered>
-                <cv:Overwrite>false</cv:Overwrite>
-                <cv:FourCC>FMP4</cv:FourCC>
-                <cv:FrameRate>45</cv:FrameRate>
-                <cv:FrameSize>
-                  <cv:Width>0</cv:Width>
-                  <cv:Height>0</cv:Height>
-                </cv:FrameSize>
-                <cv:ResizeInterpolation>NearestNeighbor</cv:ResizeInterpolation>
-              </Combinator>
+            <Expression xsi:type="Disable">
+              <Builder xsi:type="Combinator">
+                <Combinator xsi:type="cv:VideoWriter">
+                  <cv:FileName>Circle/Circle_7_11_16_18.avi</cv:FileName>
+                  <cv:Suffix>None</cv:Suffix>
+                  <cv:Buffered>true</cv:Buffered>
+                  <cv:Overwrite>false</cv:Overwrite>
+                  <cv:FourCC>FMP4</cv:FourCC>
+                  <cv:FrameRate>45</cv:FrameRate>
+                  <cv:FrameSize>
+                    <cv:Width>0</cv:Width>
+                    <cv:Height>0</cv:Height>
+                  </cv:FrameSize>
+                  <cv:ResizeInterpolation>NearestNeighbor</cv:ResizeInterpolation>
+                </Combinator>
+              </Builder>
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:Timer">
@@ -385,10 +391,14 @@
                 <rx:Period>PT0S</rx:Period>
               </Combinator>
             </Expression>
-            <Expression xsi:type="Combinator">
-              <Combinator xsi:type="rx:TakeUntil" />
+            <Expression xsi:type="Disable">
+              <Builder xsi:type="Combinator">
+                <Combinator xsi:type="rx:TakeUntil" />
+              </Builder>
             </Expression>
-            <Expression xsi:type="WorkflowOutput" />
+            <Expression xsi:type="Disable">
+              <Builder xsi:type="WorkflowOutput" />
+            </Expression>
             <Expression xsi:type="MulticastSubject">
               <Name>FileName</Name>
             </Expression>
