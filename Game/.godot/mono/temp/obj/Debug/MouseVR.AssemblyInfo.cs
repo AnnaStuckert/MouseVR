@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MouseVR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e1a12420636e23a4cd644aeba978d5ac2a226c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+011c0c5e80bd9b6c2ce9b4bf6a398c57e9bd6954")]
 [assembly: System.Reflection.AssemblyProductAttribute("MouseVR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MouseVR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

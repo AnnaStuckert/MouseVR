@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.8.1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:p1="clr-namespace:Neurophotometrics.V2;assembly=Neurophotometrics"
+                 xmlns="https://bonsai-rx.org/2018/workflow">
+  <Workflow>
+    <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="p1:FP3002">
+          <p1:AcquisitionMode>StartPhotometry</p1:AcquisitionMode>
+          <p1:PortName>COM3</p1:PortName>
+          <p1:Regions />
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="p1:PhotometryData" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="p1:PhotometryWriter">
+          <p1:IncludeRegions>false</p1:IncludeRegions>
+          <p1:IncludePlots>false</p1:IncludePlots>
+          <p1:IncludeVideo>false</p1:IncludeVideo>
+          <p1:FileName>C:\Users\avs20\Desktop\FPData.csv</p1:FileName>
+          <p1:Suffix>Timestamp</p1:Suffix>
+        </Combinator>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge From="0" To="1" Label="Source1" />
+      <Edge From="1" To="2" Label="Source1" />
+    </Edges>
+  </Workflow>
+</WorkflowBuilder>

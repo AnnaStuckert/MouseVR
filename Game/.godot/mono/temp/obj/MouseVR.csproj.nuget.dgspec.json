@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj": {}
+    "C:\\Users\\avs20\\Documents\\GitHub\\MouseVR\\Game\\MouseVR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj": {
+    "C:\\Users\\avs20\\Documents\\GitHub\\MouseVR\\Game\\MouseVR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj",
+        "projectUniqueName": "C:\\Users\\avs20\\Documents\\GitHub\\MouseVR\\Game\\MouseVR.csproj",
         "projectName": "MouseVR",
-        "projectPath": "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\MouseVR.csproj",
+        "projectPath": "C:\\Users\\avs20\\Documents\\GitHub\\MouseVR\\Game\\MouseVR.csproj",
         "packagesPath": "C:\\Users\\avs20\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avs20\\Documents\\MouseVR\\Game\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "C:\\Users\\avs20\\Documents\\GitHub\\MouseVR\\Game\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\avs20\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\avs20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -40,15 +52,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.3.0, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.3.0, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.3.0, )"
             },
             "NetMQ": {
               "target": "Package",
@@ -69,15 +81,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
+              "version": "[6.0.36, 6.0.36]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
+              "version": "[6.0.36, 6.0.36]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
+              "version": "[6.0.36, 6.0.36]"
             }
           ],
           "frameworkReferences": {
@@ -85,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

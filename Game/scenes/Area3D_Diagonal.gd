@@ -18,4 +18,3 @@ func _on_body_entered(body):
 func _on_body_exited(body):
 	if body.name == "Player":
 		Area3D_Diagonal_bump = 0.0
-
