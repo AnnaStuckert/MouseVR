@@ -363,196 +363,208 @@ def process(value):
           </Workflow>
         </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="BooleanProperty">
-          <Value>true</Value>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="BooleanProperty">
+            <Value>true</Value>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="rx:Delay">
-          <rx:DueTime>PT1S</rx:DueTime>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="rx:Delay">
+            <rx:DueTime>PT1S</rx:DueTime>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="p1:AcquisitionControl">
-        <p1:Streams>Photometry</p1:Streams>
-        <p1:Mode>Start</p1:Mode>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p1:AcquisitionControl">
+          <p1:Streams>Photometry</p1:Streams>
+          <p1:Mode>Start</p1:Mode>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="p1:FP3002">
-          <p1:AcquisitionMode>StopPhotometry</p1:AcquisitionMode>
-          <p1:PortName>COM3</p1:PortName>
-          <p1:Regions>
-            <p1:PhotometryRegion>
-              <p1:Index>0</p1:Index>
-              <p1:Channel>Red</p1:Channel>
-              <p1:Rectangle>
-                <p1:Location>
-                  <p1:X>127</p1:X>
-                  <p1:Y>517</p1:Y>
-                </p1:Location>
-                <p1:Size>
-                  <p1:Width>44</p1:Width>
-                  <p1:Height>42</p1:Height>
-                </p1:Size>
-                <p1:X>127</p1:X>
-                <p1:Y>517</p1:Y>
-                <p1:Width>44</p1:Width>
-                <p1:Height>42</p1:Height>
-              </p1:Rectangle>
-              <p1:Name>R0</p1:Name>
-            </p1:PhotometryRegion>
-            <p1:PhotometryRegion>
-              <p1:Index>1</p1:Index>
-              <p1:Channel>Green</p1:Channel>
-              <p1:Rectangle>
-                <p1:Location>
-                  <p1:X>861</p1:X>
-                  <p1:Y>401</p1:Y>
-                </p1:Location>
-                <p1:Size>
-                  <p1:Width>52</p1:Width>
-                  <p1:Height>50</p1:Height>
-                </p1:Size>
-                <p1:X>861</p1:X>
-                <p1:Y>401</p1:Y>
-                <p1:Width>52</p1:Width>
-                <p1:Height>50</p1:Height>
-              </p1:Rectangle>
-              <p1:Name>G1</p1:Name>
-            </p1:PhotometryRegion>
-          </p1:Regions>
-        </Combinator>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="p1:PhotometryData">
-          <p1:VisualizerSettings>
-            <p1:PlotSettings>
-              <p1:PlotSetting>
-                <p1:PhotometryRegion>
-                  <p1:Index>0</p1:Index>
-                  <p1:Channel>Red</p1:Channel>
-                  <p1:Rectangle>
-                    <p1:Location>
-                      <p1:X>127</p1:X>
-                      <p1:Y>517</p1:Y>
-                    </p1:Location>
-                    <p1:Size>
-                      <p1:Width>44</p1:Width>
-                      <p1:Height>42</p1:Height>
-                    </p1:Size>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="p1:FP3002">
+            <p1:AcquisitionMode>StopPhotometry</p1:AcquisitionMode>
+            <p1:PortName>COM3</p1:PortName>
+            <p1:Regions>
+              <p1:PhotometryRegion>
+                <p1:Index>0</p1:Index>
+                <p1:Channel>Red</p1:Channel>
+                <p1:Rectangle>
+                  <p1:Location>
                     <p1:X>127</p1:X>
                     <p1:Y>517</p1:Y>
+                  </p1:Location>
+                  <p1:Size>
                     <p1:Width>44</p1:Width>
                     <p1:Height>42</p1:Height>
-                  </p1:Rectangle>
-                  <p1:Name>R0</p1:Name>
-                </p1:PhotometryRegion>
-                <p1:IsVisible>true</p1:IsVisible>
-                <p1:SignalSettings>
-                  <p1:SignalSetting>
-                    <p1:Name>L470</p1:Name>
-                    <p1:LEDFlag>L470</p1:LEDFlag>
-                    <p1:IsVisible>false</p1:IsVisible>
-                    <p1:Scaling>
-                      <p1:Mode>Auto</p1:Mode>
-                      <p1:Min>0</p1:Min>
-                      <p1:Max>1</p1:Max>
-                    </p1:Scaling>
-                  </p1:SignalSetting>
-                  <p1:SignalSetting>
-                    <p1:Name>L560</p1:Name>
-                    <p1:LEDFlag>L560</p1:LEDFlag>
-                    <p1:IsVisible>true</p1:IsVisible>
-                    <p1:Scaling>
-                      <p1:Mode>Auto</p1:Mode>
-                      <p1:Min>0</p1:Min>
-                      <p1:Max>1</p1:Max>
-                    </p1:Scaling>
-                  </p1:SignalSetting>
-                  <p1:SignalSetting>
-                    <p1:Name>L415</p1:Name>
-                    <p1:LEDFlag>L415</p1:LEDFlag>
-                    <p1:IsVisible>true</p1:IsVisible>
-                    <p1:Scaling>
-                      <p1:Mode>Auto</p1:Mode>
-                      <p1:Min>0</p1:Min>
-                      <p1:Max>1</p1:Max>
-                    </p1:Scaling>
-                  </p1:SignalSetting>
-                </p1:SignalSettings>
-              </p1:PlotSetting>
-              <p1:PlotSetting>
-                <p1:PhotometryRegion>
-                  <p1:Index>1</p1:Index>
-                  <p1:Channel>Green</p1:Channel>
-                  <p1:Rectangle>
-                    <p1:Location>
-                      <p1:X>861</p1:X>
-                      <p1:Y>401</p1:Y>
-                    </p1:Location>
-                    <p1:Size>
-                      <p1:Width>52</p1:Width>
-                      <p1:Height>50</p1:Height>
-                    </p1:Size>
+                  </p1:Size>
+                  <p1:X>127</p1:X>
+                  <p1:Y>517</p1:Y>
+                  <p1:Width>44</p1:Width>
+                  <p1:Height>42</p1:Height>
+                </p1:Rectangle>
+                <p1:Name>R0</p1:Name>
+              </p1:PhotometryRegion>
+              <p1:PhotometryRegion>
+                <p1:Index>1</p1:Index>
+                <p1:Channel>Green</p1:Channel>
+                <p1:Rectangle>
+                  <p1:Location>
                     <p1:X>861</p1:X>
                     <p1:Y>401</p1:Y>
+                  </p1:Location>
+                  <p1:Size>
                     <p1:Width>52</p1:Width>
                     <p1:Height>50</p1:Height>
-                  </p1:Rectangle>
-                  <p1:Name>G1</p1:Name>
-                </p1:PhotometryRegion>
-                <p1:IsVisible>true</p1:IsVisible>
-                <p1:SignalSettings>
-                  <p1:SignalSetting>
-                    <p1:Name>L470</p1:Name>
-                    <p1:LEDFlag>L470</p1:LEDFlag>
-                    <p1:IsVisible>true</p1:IsVisible>
-                    <p1:Scaling>
-                      <p1:Mode>Auto</p1:Mode>
-                      <p1:Min>0</p1:Min>
-                      <p1:Max>1</p1:Max>
-                    </p1:Scaling>
-                  </p1:SignalSetting>
-                  <p1:SignalSetting>
-                    <p1:Name>L560</p1:Name>
-                    <p1:LEDFlag>L560</p1:LEDFlag>
-                    <p1:IsVisible>false</p1:IsVisible>
-                    <p1:Scaling>
-                      <p1:Mode>Auto</p1:Mode>
-                      <p1:Min>0</p1:Min>
-                      <p1:Max>1</p1:Max>
-                    </p1:Scaling>
-                  </p1:SignalSetting>
-                  <p1:SignalSetting>
-                    <p1:Name>L415</p1:Name>
-                    <p1:LEDFlag>L415</p1:LEDFlag>
-                    <p1:IsVisible>true</p1:IsVisible>
-                    <p1:Scaling>
-                      <p1:Mode>Auto</p1:Mode>
-                      <p1:Min>0</p1:Min>
-                      <p1:Max>1</p1:Max>
-                    </p1:Scaling>
-                  </p1:SignalSetting>
-                </p1:SignalSettings>
-              </p1:PlotSetting>
-            </p1:PlotSettings>
-            <p1:Capacity>1000</p1:Capacity>
-          </p1:VisualizerSettings>
-        </Combinator>
+                  </p1:Size>
+                  <p1:X>861</p1:X>
+                  <p1:Y>401</p1:Y>
+                  <p1:Width>52</p1:Width>
+                  <p1:Height>50</p1:Height>
+                </p1:Rectangle>
+                <p1:Name>G1</p1:Name>
+              </p1:PhotometryRegion>
+            </p1:Regions>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="p1:PhotometryData">
+            <p1:VisualizerSettings>
+              <p1:PlotSettings>
+                <p1:PlotSetting>
+                  <p1:PhotometryRegion>
+                    <p1:Index>0</p1:Index>
+                    <p1:Channel>Red</p1:Channel>
+                    <p1:Rectangle>
+                      <p1:Location>
+                        <p1:X>127</p1:X>
+                        <p1:Y>517</p1:Y>
+                      </p1:Location>
+                      <p1:Size>
+                        <p1:Width>44</p1:Width>
+                        <p1:Height>42</p1:Height>
+                      </p1:Size>
+                      <p1:X>127</p1:X>
+                      <p1:Y>517</p1:Y>
+                      <p1:Width>44</p1:Width>
+                      <p1:Height>42</p1:Height>
+                    </p1:Rectangle>
+                    <p1:Name>R0</p1:Name>
+                  </p1:PhotometryRegion>
+                  <p1:IsVisible>true</p1:IsVisible>
+                  <p1:SignalSettings>
+                    <p1:SignalSetting>
+                      <p1:Name>L470</p1:Name>
+                      <p1:LEDFlag>L470</p1:LEDFlag>
+                      <p1:IsVisible>false</p1:IsVisible>
+                      <p1:Scaling>
+                        <p1:Mode>Auto</p1:Mode>
+                        <p1:Min>0</p1:Min>
+                        <p1:Max>1</p1:Max>
+                      </p1:Scaling>
+                    </p1:SignalSetting>
+                    <p1:SignalSetting>
+                      <p1:Name>L560</p1:Name>
+                      <p1:LEDFlag>L560</p1:LEDFlag>
+                      <p1:IsVisible>true</p1:IsVisible>
+                      <p1:Scaling>
+                        <p1:Mode>Auto</p1:Mode>
+                        <p1:Min>0</p1:Min>
+                        <p1:Max>1</p1:Max>
+                      </p1:Scaling>
+                    </p1:SignalSetting>
+                    <p1:SignalSetting>
+                      <p1:Name>L415</p1:Name>
+                      <p1:LEDFlag>L415</p1:LEDFlag>
+                      <p1:IsVisible>true</p1:IsVisible>
+                      <p1:Scaling>
+                        <p1:Mode>Auto</p1:Mode>
+                        <p1:Min>0</p1:Min>
+                        <p1:Max>1</p1:Max>
+                      </p1:Scaling>
+                    </p1:SignalSetting>
+                  </p1:SignalSettings>
+                </p1:PlotSetting>
+                <p1:PlotSetting>
+                  <p1:PhotometryRegion>
+                    <p1:Index>1</p1:Index>
+                    <p1:Channel>Green</p1:Channel>
+                    <p1:Rectangle>
+                      <p1:Location>
+                        <p1:X>861</p1:X>
+                        <p1:Y>401</p1:Y>
+                      </p1:Location>
+                      <p1:Size>
+                        <p1:Width>52</p1:Width>
+                        <p1:Height>50</p1:Height>
+                      </p1:Size>
+                      <p1:X>861</p1:X>
+                      <p1:Y>401</p1:Y>
+                      <p1:Width>52</p1:Width>
+                      <p1:Height>50</p1:Height>
+                    </p1:Rectangle>
+                    <p1:Name>G1</p1:Name>
+                  </p1:PhotometryRegion>
+                  <p1:IsVisible>true</p1:IsVisible>
+                  <p1:SignalSettings>
+                    <p1:SignalSetting>
+                      <p1:Name>L470</p1:Name>
+                      <p1:LEDFlag>L470</p1:LEDFlag>
+                      <p1:IsVisible>true</p1:IsVisible>
+                      <p1:Scaling>
+                        <p1:Mode>Auto</p1:Mode>
+                        <p1:Min>0</p1:Min>
+                        <p1:Max>1</p1:Max>
+                      </p1:Scaling>
+                    </p1:SignalSetting>
+                    <p1:SignalSetting>
+                      <p1:Name>L560</p1:Name>
+                      <p1:LEDFlag>L560</p1:LEDFlag>
+                      <p1:IsVisible>false</p1:IsVisible>
+                      <p1:Scaling>
+                        <p1:Mode>Auto</p1:Mode>
+                        <p1:Min>0</p1:Min>
+                        <p1:Max>1</p1:Max>
+                      </p1:Scaling>
+                    </p1:SignalSetting>
+                    <p1:SignalSetting>
+                      <p1:Name>L415</p1:Name>
+                      <p1:LEDFlag>L415</p1:LEDFlag>
+                      <p1:IsVisible>true</p1:IsVisible>
+                      <p1:Scaling>
+                        <p1:Mode>Auto</p1:Mode>
+                        <p1:Min>0</p1:Min>
+                        <p1:Max>1</p1:Max>
+                      </p1:Scaling>
+                    </p1:SignalSetting>
+                  </p1:SignalSettings>
+                </p1:PlotSetting>
+              </p1:PlotSettings>
+              <p1:Capacity>1000</p1:Capacity>
+            </p1:VisualizerSettings>
+          </Combinator>
+        </Builder>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
           <Combinator xsi:type="rx:Timestamp" />
         </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="p1:PhotometryWriter">
-          <p1:IncludeRegions>false</p1:IncludeRegions>
-          <p1:IncludePlots>false</p1:IncludePlots>
-          <p1:IncludeVideo>false</p1:IncludeVideo>
-          <p1:FileName>FPData.csv</p1:FileName>
-          <p1:Suffix>Timestamp</p1:Suffix>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="p1:PhotometryWriter">
+            <p1:IncludeRegions>false</p1:IncludeRegions>
+            <p1:IncludePlots>false</p1:IncludePlots>
+            <p1:IncludeVideo>false</p1:IncludeVideo>
+            <p1:FileName>FPData.csv</p1:FileName>
+            <p1:Suffix>Timestamp</p1:Suffix>
+          </Combinator>
+        </Builder>
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="pylon:PylonCapture">
@@ -632,7 +644,7 @@ def process(value):
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="cv:VideoWriter">
-                <cv:FileName>Circle/Circle_9_19_36_8.avi</cv:FileName>
+                <cv:FileName>Circle/Circle_14_19_48_39.avi</cv:FileName>
                 <cv:Suffix>None</cv:Suffix>
                 <cv:Buffered>true</cv:Buffered>
                 <cv:Overwrite>false</cv:Overwrite>
@@ -716,7 +728,7 @@ def process(value):
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>Circle/Circle_9_19_36_8.csv</io:FileName>
+              <io:FileName>Circle/Circle_14_19_48_39.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
