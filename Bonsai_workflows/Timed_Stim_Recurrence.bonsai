@@ -58,8 +58,8 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="rx:Timer">
-          <rx:DueTime>PT30S</rx:DueTime>
-          <rx:Period>PT1M</rx:Period>
+          <rx:DueTime>PT1M</rx:DueTime>
+          <rx:Period>PT3M</rx:Period>
         </Combinator>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -98,8 +98,8 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="rx:Timer">
-          <rx:DueTime>PT20S</rx:DueTime>
-          <rx:Period>PT1M</rx:Period>
+          <rx:DueTime>PT2M</rx:DueTime>
+          <rx:Period>PT3M</rx:Period>
         </Combinator>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -138,8 +138,8 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="rx:Timer">
-          <rx:DueTime>PT10S</rx:DueTime>
-          <rx:Period>PT1M</rx:Period>
+          <rx:DueTime>PT3M</rx:DueTime>
+          <rx:Period>PT3M</rx:Period>
         </Combinator>
       </Expression>
       <Expression xsi:type="Combinator">
