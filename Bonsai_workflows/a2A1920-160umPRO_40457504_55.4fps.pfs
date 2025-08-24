@@ -46,11 +46,11 @@ BslMultipleROIRowSelector	Row1
 ImageCompressionMode	Off
 BslAcquisitionStopMode	AbortExposure
 BslExposureTimeMode	Standard
-ExposureTime	15000.0
-ExposureAuto	Off
+ExposureTime	18039.0
+ExposureAuto	Continuous
 ExposureMode	Timed
 BslSensorBitDepthMode	Auto
-AcquisitionFrameRate	30.0
+AcquisitionFrameRate	55.4
 AcquisitionFrameRateEnable	0
 TriggerSelector	FrameBurstStart
 TriggerMode	Off
