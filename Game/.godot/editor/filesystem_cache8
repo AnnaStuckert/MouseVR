@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749465534
+::res://::1756141062
 controls.gd::GDScript::-1::1739208639::0::1::::Player<>CharacterBody3D<>::
 export_presets.cfg::TextFile::-1::1739208639::0::1::::<><>::
 icon.svg::CompressedTexture2D::5012062695489133368::1739208639::1743697435::1::::<><>::
@@ -48,7 +48,7 @@ Horizontal lines_Horizontal lines.png::CompressedTexture2D::5086752120157622748:
 Vertical lines2_Vertical lines.png::CompressedTexture2D::3841434668413555::1739208640::1743697435::1::::<><>::
 Vertical lines.glb::PackedScene::6263216270362589917::1739208640::1743697437::1::::<><>::uid://d3rp3fx5rkww3::::res://models/Vertical lines_Vertical lines.png
 Vertical lines_Vertical lines.png::CompressedTexture2D::9160605151417512128::1739208640::1743697435::1::::<><>::
-::res://scenes/::1743697738
+::res://scenes/::1749465634
 Area3D.gd::GDScript::-1::1739208641::0::1::::<>Area3D<>::
 Area3D_Circles.gd::GDScript::-1::1739208641::0::1::::<>Area3D<>::
 Area3D_Diagonal.gd::GDScript::-1::1739208943::0::1::::<>Area3D<>::
@@ -58,7 +58,7 @@ BonsaiNode2.cs::CSharpScript::-1::1739208641::0::1::::<>Node3D<>::
 BonsaiNode_bump.cs::CSharpScript::-1::1739208641::0::1::::<><>::
 Camera3D_curvature.gd::GDScript::-1::1739208641::0::1::::<>Camera3D<>::
 Camera3D_projection_flip.gd::GDScript::-1::1739208641::0::1::::<>Camera3D<>::
-Environment.tres::Environment::1157748629923043445::1743697738::0::1::::<><>::
+Environment.tres::Environment::1157748629923043445::1749465634::0::1::::<><>::
 Game.gd::GDScript::-1::1739208641::0::1::::Game<>Node3D<>::
 house.tscn::PackedScene::2903245499004201580::1739208641::0::1::::<><>::uid://i2ruu72mdfc2::::res://assets/models/house.dae
 MasterCircle.cs::CSharpScript::-1::1739208641::0::1::::<>Node3D<>::
@@ -69,6 +69,6 @@ Obstacle.tscn::PackedScene::3831234891945170304::1739208641::0::1::::<><>::uid:/
 Sound.gd::GDScript::-1::1739208641::0::1::::<>RigidBody3D<>::
 UI.gd::GDScript::-1::1739208641::0::1::::UI<>Control<>::
 UI.tscn::PackedScene::8115329696176188121::1739208641::0::1::::<><>::res://scenes/UI.gd
-World.tscn::PackedScene::2852491839588531091::1743697738::0::1::::<><>::res://scenes/Game.gd<>res://controls.gd<>uid://dbcox4r7v7l7i::::res://assets/textures/grid.png<>uid://bhmma80v3svv5::::res://scenes/house.tscn<>uid://qq27ldxcyte8::::res://scenes/Environment.tres<>uid://but445bck7nue::::res://scenes/Obstacle.tscn<>uid://bkf0qxvuygkrp::::res://scenes/Board.tscn<>uid://dnvekamlox8kj::::res://scenes/UI.tscn<>res://scripts/Bonsai.cs<>uid://cvh7iy8odl638::::res://models/Vertical lines.glb<>res://scenes/Area3D_Vertical.gd<>uid://dom7bjnhrcpyl::::res://models/Diagonal lines.glb<>res://scenes/Area3D_Diagonal.gd<>res://scenes/MasterDiagonal.gd<>uid://5m4lvkbkg47j::::res://models/Circles.glb<>res://scenes/MasterCircle.gd<>res://scenes/Area3D_Circles.gd<>res://scenes/MasterVertical.gd
+World.tscn::PackedScene::2852491839588531091::1749465634::0::1::::<><>::res://scenes/Game.gd<>res://controls.gd<>uid://dbcox4r7v7l7i::::res://assets/textures/grid.png<>uid://bhmma80v3svv5::::res://scenes/house.tscn<>uid://qq27ldxcyte8::::res://scenes/Environment.tres<>uid://but445bck7nue::::res://scenes/Obstacle.tscn<>uid://bkf0qxvuygkrp::::res://scenes/Board.tscn<>uid://dnvekamlox8kj::::res://scenes/UI.tscn<>res://scripts/Bonsai.cs<>uid://cvh7iy8odl638::::res://models/Vertical lines.glb<>res://scenes/Area3D_Vertical.gd<>uid://dom7bjnhrcpyl::::res://models/Diagonal lines.glb<>res://scenes/Area3D_Diagonal.gd<>res://scenes/MasterDiagonal.gd<>uid://5m4lvkbkg47j::::res://models/Circles.glb<>res://scenes/MasterCircle.gd<>res://scenes/Area3D_Circles.gd<>res://scenes/MasterVertical.gd
 ::res://scripts/::1739208641
 Bonsai.cs::CSharpScript::-1::1739208641::0::1::::<>Node<>::
