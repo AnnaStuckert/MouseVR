@@ -1,0 +1,5 @@
+res://scenes/World.tscn
+res://scenes/Environment.tres
+res://scenes/Area3D_Circles.gd
+res://scenes/Area3D_Diagonal.gd
+res://scenes/Area3D_Vertical.gd
